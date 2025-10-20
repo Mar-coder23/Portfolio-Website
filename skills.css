@@ -1,0 +1,311 @@
+w/* styling for entire page */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* styling for the container that holds entire page */
+#container{
+    height: 100vh;
+    max-width: 100%;
+    overflow-y: auto;
+}
+/* home page start */
+#homePage{
+    height: 100vh;
+    color: white;
+    background-color: rgb(19, 19, 19);
+    overflow: hidden;
+}
+
+/* nav bar styling */
+#nav{
+    height: 6em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(8, 8, 8);
+    background-image: url(images/background.png);
+    background-position: top;
+    position: fixed;
+    z-index: 1002;
+}
+/* logo styling */
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 10em;
+}
+.logo img{
+    height: 4em;
+    align-items: center;
+
+}
+/* name styling */
+.name{
+    padding-left: .8em;
+    
+    
+}
+.name p{
+    font-size: 1.4em;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid white;
+    padding-top: .4em;
+}
+.lastName{
+    font-weight: 200;
+}
+.front-end-text{
+    font-size: .8em !important;
+    border-bottom: none !important;
+    text-align: center;
+}
+/* ul li list styling on right of nav */
+.list{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+    margin-right: 10em;
+}
+.list li{
+    padding: 1em 1.2em .5em 1em;
+    font-size: 1.2em;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    transition: .1s ease-in-out;
+
+}
+.list a:active{
+    transform: scale(0.9);
+}
+
+
+/* cool hover effect with bottom border for each a tag */
+.home{
+    position: relative;
+    display: inline-block;
+}
+.home::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 1px;
+    background-color: white; 
+    transition: .8s ease; 
+}
+.home:hover::after {
+    width: 100%;
+}
+.about{
+    position: relative;
+    display: inline-block;
+}
+.about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 1px;
+    background-color: white; 
+    transition: .8s ease; 
+}
+.about:hover::after {
+    width: 100%;
+}
+.contact{
+    position: relative;
+    display: inline-block;
+}
+.contact::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 1px;
+    background-color: white; 
+    transition: .8s ease; 
+}
+.contact:hover::after {
+    width: 100%;
+}
+.projects{
+    position: relative;
+    display: inline-block;
+}
+.projects::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%; 
+    height: 1px;
+    background-color: white; 
+    transition: .8s ease; 
+}
+.projects:hover::after {
+    width: 100%;
+}
+/* end of Nav bar */
+
+
+.skills-title{
+    height: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-size: 4em;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    
+}
+.skills-desc{
+    margin-top: 0em;
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    width: 50%;
+    margin:  0 auto;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.waffle-grid{
+    height: 24em;
+    width: 60%;
+    margin:  0 auto;
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-row{
+    height: 10em;
+    display: flex;
+}
+
+.bottom-row{
+    height: 10em;
+    display: flex;
+}
+.box-1{
+    position: relative;
+}
+.box-1 img{
+    position: absolute;
+    height: 5em;
+    top: 1.7em;
+    left: 1.5em;
+}
+.box-2{
+    position: relative;
+}
+.box-2 img{
+    position: absolute;
+    height: 5.8em;
+    top: 1.4em;
+    left: 1.2em;
+}
+.box-3{
+    position: relative;
+}
+.box-3 img{
+    position: absolute;
+    height: 5.4em;
+    top: 1.4em;
+    left: -.7em;
+}
+.box-4{
+    position: relative;
+}
+.box-4 img{
+    position: absolute;
+    height: 5.4em;
+    top: 1.2em;
+    left: -.7em;
+}
+.box-5{
+    position: relative;
+}
+.box-5 img{
+    position: absolute;
+    height: 5.4em;
+    top: 1.4em;
+    left: 1.35em;
+}
+.box-6{
+    position: relative;
+}
+.box-6 img{
+    position: absolute;
+    height: 5.4em;
+    top: 1.4em;
+    left: 1.35em;
+}
+.box-7{
+    position: relative;
+}
+.box-7 img{
+    position: absolute;
+    height: 4em;
+    top: 2.2em;
+    left: .8em;
+}
+.box-8{
+    position: relative;
+}
+.box-8 img{
+    position: absolute;
+    height: 5em;
+    top: 1.6em;
+    left: 1.7em;
+}
+.box-9{
+    position: relative;
+}
+.box-9 img{
+    position: absolute;
+    height: 7em;
+    top: .4em;
+    left: .7em;
+}
+.box-10{
+    position: relative;
+}
+.box-10 img{
+    position: absolute;
+    height: 4em;
+    top: 2em;
+    left: 1.6em;
+}
+.box-top{
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    display: inline-block;
+    margin: .8em;
+
+}
+.box-btm{
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    display: inline-block;
+    margin: .8em;
+}
